@@ -5,6 +5,7 @@ import Paciente from "./paciente.js"
 import Doctor from "./doctor.js"
 import Cita from "./cita.js"
 import Hospital from "./hospital.js"
+import PacienteAsegurado from "./pacienteAsegurado.js"
 
 class Main {
     constructor(){
@@ -34,8 +35,13 @@ class Main {
     }
 
     pruebaPaciente(){
-        let paciente = new Paciente(new Nombre("Ana", "Landín", "López"), new Fecha(15,5,2001), 3123045861);
+        let datosPaciente = { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz")}
+
+        let paciente = new Paciente(datosPaciente)
         console.log(paciente.getPerfil());
+
+        let pacienteS = new PacienteAsegurado(new Nombre("Ana", "Landín", "López"), new Fecha(15,5,2001), 3123045861, 918, new Fecha(11,12,2021), "Doña bacteria");
+        console.log(pacienteS.getPerfil());
     }
 
     pruebaDoctor(){
