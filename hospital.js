@@ -10,7 +10,7 @@ export default class Hospital {
      * @param {Doctor} doctor
      * @param {Cita} cita
      */
-    constructor(nombre, direccion){
+    constructor({nombre, direccion}){
         this._nombre = nombre;
         this._direccion = direccion;
         this._doctores = new Array();
