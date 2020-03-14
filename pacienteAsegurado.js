@@ -1,8 +1,8 @@
 import Paciente from "./paciente.js"
 
 export default class PacienteAsegurado extends Paciente{
-    constructor(nombre, fechaNacimiento, telefono, numeroPoliza, vigencia, compañia){
-        super(nombre, fechaNacimiento, telefono)
+    constructor({nombre, fechaNacimiento, telefono, numeroPoliza, vigencia, compañia}){
+        super({nombre, fechaNacimiento, telefono})
         this._numeroPoliza = numeroPoliza
         this._vigencia = vigencia
         this._compañia = compañia 

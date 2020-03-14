@@ -7,6 +7,9 @@ import Cita from "./cita.js"
 import Hospital from "./hospital.js"
 import PacienteAsegurado from "./pacienteAsegurado.js"
 
+var datosPaciente = { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz")}
+var datosPacienteA =  { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz"), numeroPoliza: 918, vigencia: new Fecha(11,12,2021), compañia: "Doña bacteria" }
+
 class Main {
     constructor(){
         this.hospital = new Hospital("Colima", "Felipe Cebolla #15");
@@ -34,13 +37,13 @@ class Main {
         console.log(nombre.getIniciales());
     }
 
-    pruebaPaciente(){
-        let datosPaciente = { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz")}
 
+    
+    pruebaPaciente(){
         let paciente = new Paciente(datosPaciente)
         console.log(paciente.getPerfil());
 
-        let pacienteS = new PacienteAsegurado(new Nombre("Ana", "Landín", "López"), new Fecha(15,5,2001), 3123045861, 918, new Fecha(11,12,2021), "Doña bacteria");
+        let pacienteS = new PacienteAsegurado(datosPacienteA);
         console.log(pacienteS.getPerfil());
     }
 
@@ -50,7 +53,8 @@ class Main {
     }
 
     pruebaCita(){
-        let cita = new Cita(new Fecha(20,2,2020), new Tiempo(6,30,"pm"), new Doctor("ETF59", "Cardiólogo", new Nombre("Manuel", "Ávila", "Camacho"), 3135620), new Paciente(new Nombre("Ana", "Landín", "López"), new Fecha(15,5,2001), 3123045861));
+        let datosCita = {fecha: new Fecha(20,2,2020), hora: new Tiempo(6,30,"pm"), doctor: new Doctor("ETF59", "Cardiólogo", new Nombre("Manuel", "Ávila", "Camacho"), 3135620), paciente: new Paciente(datosPaciente)}
+        let cita = new Cita(datosCita);
     console.log(cita.getCita());
     }
 
