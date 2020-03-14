@@ -16,6 +16,17 @@ export default class Doctor {
         
     }
 
+    getCedula(){
+        return this._cedula
+    }
+
+    esIgual(doctor){
+        if (doctor.getCedula() === this._cedula){
+            return true
+        } 
+        return false
+    }
+
     getPaternoD(){
         return this._nombre.getPaterno()
     }

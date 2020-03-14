@@ -11,9 +11,9 @@ var datosPaciente = { fechaNacimiento: new Fecha(4,11,2011), telefono: 312304586
 var datosPacienteA =  { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz"), numeroPoliza: 918, vigencia: new Fecha(11,12,2021), compañia: "Doña bacteria" }
 
 var datosDoc1 = {cedula: "ETF59", especialidad: "Cardiólogo", nombre: new Nombre("Manuel", "Ávila", "Camacho"), telefono: 3135620}
-var datosDoc2 = {cedula: "ETF59", especialidad: "Cardiólogo", nombre: new Nombre("Manuel", "Ávila", "Camacho"), telefono: 3135620}
-var datosDoc3 = {cedula: "ETF59", especialidad: "Cardiólogo", nombre: new Nombre("Manuel", "Ávila", "Camacho"), telefono: 3135620}
-var datosDoc4 = {cedula: "ETF59", especialidad: "Cardiólogo", nombre: new Nombre("Manuel", "Ávila", "Camacho"), telefono: 3135620}
+var datosDoc2 = {cedula: "ETF58", especialidad: "Cardiólogo", nombre: new Nombre("Carlos", "Ávila", "Camacho"), telefono: 3135620}
+var datosDoc3 = {cedula: "ETF57", especialidad: "Cardiólogo", nombre: new Nombre("Ángel", "Ávila", "Camacho"), telefono: 3135620}
+var datosDoc4 = {cedula: "ETF56", especialidad: "Cardiólogo", nombre: new Nombre("Cevin", "Ávila", "Camacho"), telefono: 3135620}
 
 var datosCita1 = {fecha: new Fecha(20,2,2020), hora: new Tiempo(6,30,"pm"), doctor: new Doctor(datosDoc1), paciente: new Paciente(datosPaciente)}
 var datosCita2 = {fecha: new Fecha(24,2,2020), hora: new Tiempo(6,30,"pm"), doctor: new Doctor(datosDoc2), paciente: new Paciente(datosPaciente)}

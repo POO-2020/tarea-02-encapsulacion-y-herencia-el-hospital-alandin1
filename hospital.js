@@ -17,8 +17,19 @@ export default class Hospital {
         this._citas = new Array();
     }
 
+    
+
+    _encontrarDoc(doctor){
+        let resultado = this._doctores.find(d => d.esIgual(doctor))
+        return resultado
+    }
+
     registrarDoctor(doctor){
-        this._doctores.push(doctor);
+        if (this._encontrarDoc(doctor) !== null){
+            return false
+        }
+        this._doctores.push(doctor)
+        return true
     }
 
     listarDoctores(){
