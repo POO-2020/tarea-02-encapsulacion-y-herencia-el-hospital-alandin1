@@ -25,7 +25,7 @@ export default class Hospital {
     }
 
     registrarDoctor(doctor){
-        if (this._encontrarDoc(doctor) !== null){
+        if (this._encontrarDoc(doctor) !== undefined){
             return false
         }
         this._doctores.push(doctor)

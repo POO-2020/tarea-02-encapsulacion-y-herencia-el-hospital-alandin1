@@ -7,8 +7,8 @@ import Cita from "./cita.js"
 import Hospital from "./hospital.js"
 import PacienteAsegurado from "./pacienteAsegurado.js"
 
-var datosPaciente = { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz")}
-var datosPacienteA =  { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("ana", "landom", "lapexz"), numeroPoliza: 918, vigencia: new Fecha(11,12,2021), compañia: "Doña bacteria" }
+var datosPaciente = { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("Juan", "Mojica", "Cárdenas")}
+var datosPacienteA =  { fechaNacimiento: new Fecha(4,11,2011), telefono: 3123045861, nombre: new Nombre("Ana", "Landín", "López"), numeroPoliza: 918, vigencia: new Fecha(11,12,2021), compañia: "Doña bacteria" }
 
 var datosDoc1 = {cedula: "ETF59", especialidad: "Cardiólogo", nombre: new Nombre("Manuel", "Ávila", "Camacho"), telefono: 3135620}
 var datosDoc2 = {cedula: "ETF58", especialidad: "Cardiólogo", nombre: new Nombre("Carlos", "Ávila", "Camacho"), telefono: 3135620}
